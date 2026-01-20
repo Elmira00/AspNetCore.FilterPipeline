@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<CustomActionFilter>();
+builder.Services.AddScoped<CustomResultFilter>();
 
 var app = builder.Build();
 
